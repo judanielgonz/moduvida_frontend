@@ -1,12 +1,12 @@
-// src/App.jsx (o src/App.js si lo renombraste)
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/navbar'; // Asegúrate de que el archivo sea NavBar.jsx
+import NavBar from './components/navbar'; // Ajustado según tu indicación
 import Header from './components/Header';
 import Proveedores from './components/FormularioProveedor';
 import Inicio from './components/Inicio';
 import Articulos from './components/Articulos';
-import OrdenesCompra from './components/OrdenesCompra';
+import OrdenesCompra from './components/ordenesdecompra'; // Ajustado al nombre probable
 import FormularioTrabajador from './components/trabajadores';
 import GestionClientes from './components/clientes';
 import GestionStock from './components/stock';

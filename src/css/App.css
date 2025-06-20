@@ -1,0 +1,41 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 20%;
+    background: #333;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 20%;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+
+    .main-content {
+      margin-left: 0;
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,470 @@
+/* Importar fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.proveedores-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos del encabezado */
+.proveedores-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.proveedores-header h2 {
+  font-size: 2.2rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+/* Sección de formulario */
+.form-section {
+  margin-bottom: 50px;
+}
+
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h3 {
+  font-size: 1.6rem;
+  color: #374151;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.proveedores-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 280px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.contactos-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactos-section h4 {
+  font-size: 1.3rem;
+  color: #374151;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contacto-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.btn-delete-contacto {
+  background: #ef4444;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-delete-contacto:hover {
+  background: #dc2626;
+}
+
+.btn-delete-contacto:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
+
+.btn-add-contacto {
+  background: #10b981;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.btn-add-contacto:hover {
+  background: #059669;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* Sección de lista de proveedores */
+.proveedores-lista {
+  margin-top: 30px;
+}
+
+.proveedores-lista-header h3 {
+  font-size: 1.6rem;
+  color: #374151;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.filters-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.sort-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-sort {
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-sort:hover {
+  background: #d1d5db;
+}
+
+.table-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+table th,
+table td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 0.95rem;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+table th {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.col-nombre {
+  min-width: 200px;
+}
+
+.col-email {
+  min-width: 200px;
+}
+
+.col-telefono {
+  min-width: 150px;
+}
+
+.col-catalogo {
+  min-width: 250px;
+}
+
+.col-acciones {
+  min-width: 150px;
+}
+
+.row-even {
+  background: #ffffff;
+}
+
+.row-odd {
+  background: #f9fafb;
+}
+
+table tr:hover {
+  background: #f1f5f9;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.edit-button:hover {
+  background: #059669;
+}
+
+.delete-button {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.delete-button:hover {
+  background: #dc2626;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.loading-message {
+  text-align: center;
+  color: #374151;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.error-message {
+  text-align: center;
+  color: #ef4444;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .proveedores-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .proveedores-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .proveedores-form {
+    flex-direction: column;
+  }
+
+  .contacto-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .btn-delete-contacto {
+    width: 100%;
+    height: 40px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 100%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table,
+  table tbody,
+  table tr,
+  table td {
+    display: block;
+    width: 100%;
+  }
+
+  table tr {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+  }
+
+  table td {
+    text-align: right;
+    padding: 12px 16px;
+    position: relative;
+    border: none;
+    min-height: 50px;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    width: 40%;
+    text-align: left;
+    font-weight: 500;
+    color: #374151;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .actions-cell {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
