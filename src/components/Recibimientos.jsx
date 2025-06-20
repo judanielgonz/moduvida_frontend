@@ -15,7 +15,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/Recibimientos.css';
 
-import baseUrl from '../config'; // Importa la URL base
+const baseUrl = 'http://localhost:5000/api';
 
 const Recibimientos = () => {
   const [recibimientos, setRecibimientos] = useState([]);

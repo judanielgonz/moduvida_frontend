@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/Stock.css';
 
-import baseUrl from '../config'; // Importa la URL base
+const baseUrl = 'http://localhost:5000/api';
 
 const Stock = () => {
   const [stock, setStock] = useState([]);

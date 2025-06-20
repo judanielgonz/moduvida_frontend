@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/FormularioModelo.css';
 
-import baseUrl from '../config'; // Importa la URL base
+const baseUrl = 'http://localhost:5000/api';
 
 const FormularioModelo = () => {
   const [formulario, setFormulario] = useState({
