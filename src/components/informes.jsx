@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/Informes.css';
 
-const baseUrl = 'http://localhost:5000/api';
+import baseUrl from '../config'; // Importa la URL base
 const GEMINI_API_KEY = 'AIzaSyCE8L7oAQ0hkzdbaFI_5rceaNwSuhZN_gI'; // Debería estar en .env para producción
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 

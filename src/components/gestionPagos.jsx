@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/GestionPedidosYPagos.css';
 
-const baseUrl = 'http://localhost:5000/api';
+import baseUrl from '../config'; // Importa la URL base
 
 const GestionPedidosYPagos = () => {
   const [pedidos, setPedidos] = useState([]);

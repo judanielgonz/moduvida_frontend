@@ -6,7 +6,7 @@ import '../css/dashboard.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const baseUrl = 'http://localhost:5000/api';
+import baseUrl from '../config'; // Importa la URL base
 
 const Dashboard = () => {
   const [ordenesPendientes, setOrdenesPendientes] = useState(0);

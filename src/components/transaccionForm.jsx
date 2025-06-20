@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:5000/api';
+import baseUrl from '../config'; // Importa la URL base
 
 const TransaccionForm = ({ modelos, onTransaccionRealizada }) => {
   const [modeloId, setModeloId] = useState('');
